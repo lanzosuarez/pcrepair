@@ -1,5 +1,81 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    section.hero.is-primary.is-large.header-image
+      .hero-head
+        header.nav
+          .container
+            .nav-left
+              a.nav-item(href='index.html')
+                img(src='images/bulma-white.png', alt='Logo')
+            span.nav-toggle
+              span
+              span
+              span
+            .nav-right.nav-menu
+              a.nav-item.is-active
+                | Home
+              a.nav-item
+                | Examples
+              a.nav-item
+                | Documentation
+              span.nav-item
+                a.button.is-info.is-outlined.is-inverted
+                  span.icon
+                    i.fa.fa-github
+                  span Download
+      .hero-body
+        .container.has-text-centered
+          h1.title.is-2
+            | Hero Heading
+          h2.subtitle.is-5
+            | A hero description could go here.
+          p
+            a.button.is-outlined
+              span.icon
+                i.fa.fa-download
+              span
+                | Download
+    .hero-cta
+      nav.level
+        .level-item.has-text-centered
+          p.title
+            | Call to action here!
+            a.button.is-primary
+              span.icon
+                i.fa.fa-download
+              span Intent
+    .section.main
+      .container
+        .columns
+           each service, i in services
+            .column.is-4
+              .panel
+                .panel-block.section
+                  p.has-text-centered
+                    i.fa.fa-bar-chart.icon-block
+                  br
+                  div.title= service.name
+                  p
+                    | #{service.description}
+                  br
+                  p.has-text-centered
+                    a.button.is-info.is-outlined(href= service.link) View Offer
+    footer.footer
+      .container
+        .content.has-text-centered
+          p
+            strong Bulma
+            |  by
+            a(href='http://jgthms.com') Jeremy Thomas
+            | . The source code is licensed
+            a(href='http://opensource.org/licenses/mit-license.php') MIT
+            | . The website content
+            |           is licensed
+            a(href='http://creativecommons.org/licenses/by-nc-sa/4.0/') CC ANS 4.0
+            | .
+          p
+            a.icon(href='https://github.com/jgthms/bulma')
+              i.fa.fa-github
+    script(async='', type='text/javascript', src='javascript/bulma.js')
+

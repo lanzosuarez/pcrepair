@@ -6,74 +6,7 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title Hero - Free Bulma template
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
-    link(rel='stylesheet', type='text/css', href='stylesheets/bulma.css')
-    link(rel='stylesheet', type='text/css', href='stylesheets/hero.css')
+    link(rel='stylesheet', type='text/css', href='./stylesheets/bulma.css')
+    link(rel='stylesheet', type='text/css', href='./stylesheets/hero.css')
   body
-    section.hero.is-primary.is-large.header-image
-      .hero-head
-        header.nav
-          .container
-            span.nav-toggle
-              span
-              span
-              span
-            .nav-right.nav-menu
-              a.nav-item.is-active
-                | Home
-              a.nav-item
-                | About
-              a.nav-item
-                | Services
-              a.nav-item
-                | Contact
-      .hero-body
-        .container.has-text-centered
-          h1.title.is-2
-            | PC Repair Website
-          h2.subtitle.is-5
-            | Is your PC slow?
-
-    .hero-cta
-      nav.level
-        .level-item.has-text-centered
-          p.title
-            | Contact us now!!!
-            a.button.is-primary
-              span.icon
-                i.fa.fa-download
-              span Intent
-    .section.main
-      .container
-        .columns
-          each service, i in services
-            .column.is-4
-              .panel
-                .panel-block.section
-                  p.has-text-centered
-                    i.fa.fa-bar-chart.icon-block
-                  br
-                  div.title= service.name
-                  p
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                  br
-                  p.has-text-centered
-                    a.button.is-info.is-outlined Action
-
-
-    footer.footer
-      .container
-        .content.has-text-centered
-          p
-            strong Bulma
-            |  by
-            a(href='http://jgthms.com') Jeremy Thomas
-            | . The source code is licensed
-            a(href='http://opensource.org/licenses/mit-license.php') MIT
-            | . The website content
-            |           is licensed
-            a(href='http://creativecommons.org/licenses/by-nc-sa/4.0/') CC ANS 4.0
-            | .
-          p
-            a.icon(href='https://github.com/jgthms/bulma')
-              i.fa.fa-github
-    script(async='', type='text/javascript', src='javascript/bulma.js')
+    block content

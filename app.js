@@ -7,8 +7,9 @@ var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 
 var index = require('./routes/index');
-var users = require('./routes/users');
-var profileTwo = require('./routes/profileTwo');
+var serviceHardware = require('./routes/hardware');
+var serviceVirus = require('./routes/virus');
+var serviceTuneup = require('./routes/tuneup');
 
 var app = express();
 
@@ -25,8 +26,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/users', users);
-app.use('/profile-two', profileTwo);
+app.use('/hardware', serviceHardware);
+app.use('/virus', serviceVirus);
+app.use('/tuneup', serviceTuneup);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
