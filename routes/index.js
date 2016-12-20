@@ -3,7 +3,35 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'PC Repair' });
+  var templateData = {
+    title: 'COE V1',
+    name: 'Serjay Ilaga',
+    description: 'About me',
+    skills: 'node, npm, express, git, heroku',
+    services: [
+        {
+            "name":"Hardware Repair",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a mollis est, sed dapibus neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae",
+            "price_range":"PHP 1000 - PHP 2000"
+        },
+        {
+            "name":"Virus Removal",
+            "description":"Consectetur adipiscing elit. Maecenas a mollis est, sed dapibus neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae",
+            "price_range":"PHP 1000 - PHP 1500"
+        },
+        {
+            "name":"Pc Tune Up",
+            "description":"Adipiscing elit. Maecenas a mollis est, sed dapibus neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae",
+            "price_range":"PHP 750 - PHP 1000"
+        },
+        {
+            "name":"Network Services",
+            "description":"Sed dapibus neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae",
+            "price_range":"PHP 5000 - PHP 10000"
+        }
+    ]
+  };
+  res.render('index', templateData);
 });
 
 module.exports = router;
