@@ -852,3 +852,12 @@ select#select{
   margin: 0 auto;
 }
 /*------------------------------------------*/
+/*---------------Services-----------*/
+.spacer{
+  height: 93px;
+}
+hr {
+    border-top-color: #d3d6db;
+    margin: 40px 0;
+}
+/*--------------end-----------------*/
