@@ -10,11 +10,11 @@ var index = require('./routes/index');
 var serviceHardware = require('./routes/hardware');
 var serviceVirus = require('./routes/virus');
 var serviceTuneup = require('./routes/tuneup');
-<<<<<<< HEAD
+
 var contact = require('./routes/contact');
 var about = require('./routes/about');
-=======
->>>>>>> 1e3c93bef808306480bb349ffc79270b9050ba49
+
+
 
 var app = express();
 
@@ -34,11 +34,10 @@ app.use('/', index);
 app.use('/hardware', serviceHardware);
 app.use('/virus', serviceVirus);
 app.use('/tuneup', serviceTuneup);
-<<<<<<< HEAD
+
 app.use('/about', about);
 app.use('/contact', contact);
-=======
->>>>>>> 1e3c93bef808306480bb349ffc79270b9050ba49
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
