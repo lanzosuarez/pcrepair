@@ -1,0 +1,155 @@
+extends layout
+
+block content
+  #startChange
+    section
+      #banner
+        .content
+          h1 Ipsum sed lorem
+          p
+            | Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod
+            br
+            | sed arcu cras consecuat lorem ipsum dolor sit amet.
+          ul.actions(style='list-style:none')
+            li
+              a.button.is-primary(href='#one')#inquire Contact Us!
+    
+    section.hero.is-large
+      .container#offer
+        h2 Services we offer
+        hr
+      .container#pads
+        .columns.tile
+          .tile.is-parent.is-vertical.is-3
+            article.tile.is-child#child
+              h2(align='right')#service-head Hardware Repair
+              p(align='right')#service-sub PC Rocket Hardware Repair is committed in bringing you a consistently high level of service. We pride ourselves on providing same day or next day service.
+            article.tile.is-child#child
+              h2(align='right')#service-head PC Tune-Up
+              p(align='right')#service-sub Your computer does not have to be slow. In most cases this is caused by your computer not running correctly. PC Rocket can help you get the fastest speeds possible for your computer.
+          .tile.is-parent.is-6.is-fluid#rocketLaptop
+            article.tile.is-child
+              .laptop
+                .screen
+                  .cloud.c-l1l.c11
+                  .cloud.c-l1l.c12
+                  .cloud.c-l1l.c13
+                  .cloud.c-l1l.c14
+                  .cloud.c-l1r.c11
+                  .cloud.c-l1r.c12
+                  .cloud.c-l1r.c13
+                  .cloud.c-l1r.c14
+                  .cloud.c-l2l.c21
+                  .cloud.c-l2l.c22
+                  .cloud.c-l2l.c23
+                  .cloud.c-l2l.c24
+                  .cloud.c-l2r.c21
+                  .cloud.c-l2r.c22
+                  .cloud.c-l2r.c23
+                  .cloud.c-l2r.c24
+                  .spaceship
+                    .cloud-0
+                    .wing-l1
+                    .wing-r1
+                    .wing-l2
+                    .wing-r2
+                    .part-1
+                    .part-2
+                    .part-3
+                .keyboard
+                  .mouse
+          .tile.is-parent.is-vertical.is-3
+            article.tile.is-child#child
+              h2(align='left')#service-head Virus Removal
+              p(align='left')#service-sub PC Rocket will help you detect and remove deeply rooted viruses, spyware and other dangerous malware.
+            article.tile.is-child#child
+              h2(align='left')#service-head Network Services
+              p(align='left')#service-sub PC Rocket can setup your wireless network and other network related for you, complete with security enabled for your safety. We work on any brand and every model.
+
+    section.hero.is-large
+      #aboutCover
+        .container#offer.acover(align="center")
+          h2 About Us
+          hr
+        .container#bcover
+          .columns
+            .column.is-4(align='center')
+              .card
+                .card-image.hover08
+                  figure.image.is-4by3
+                    img(src='../../images/pc1.jpg', alt='')
+                .card-content
+                  .content
+                    h5(align="center") Onsite Computer Repair Service in Manila 
+                    p(align="justify") PC Rocket Manila is proud to offer a wide range of onsite computer repair services to Philippines, Manila metro area businesses and homes at excellent rates. As always, our service is guaranteed!
+                  .media-center
+                    a.button.is-primary Read More
+            .column.is-4(align='center')
+              .card
+                .card-image.hover08
+                  figure.image.is-4by3
+                    img(src='../../images/pc2.jpg', alt='')
+                .card-content
+                  .content
+                    h5(align="center") PC Maintenance and Repair 
+                    p(align="justify") We offer computer check up, computer maintenance and computer tune up service. These services help to detect and prevent serious computer problems, fix slow computers, and generally optimize your computer for better performance.
+                  .media-center
+                    a.button.is-primary Read more
+            .column.is-4(align='center')
+              .card
+                .card-image.hover08
+                  figure.image.is-4by3
+                    img(src='../../images/pc3.jpg', alt='')
+
+                .card-content
+                  figure
+                    .content(align="justify")
+                      h5(align="center") Remote Troubleshooting for your PC.
+                      p(align="justify") Get Started Now! Easy as 1-2-3. Contact us, send us e-mail. If you are one of our clients, you can take advantage affordable rates for all types of computer repair services, such as hardware repair, malware removal and much more. 
+                    .media-center
+                      a.button.is-primary Read more
+
+    section.hero.is-medium
+      #contactCov
+        #offer.ccover
+          h2 Contact Us
+          hr
+        .container.is-fluid
+          #contactCon
+            .columns
+              .column.is-6
+                p.control.is-expanded
+                  input.input(type='text', placeholder='Name' id='input')
+              .column.is-6
+                p.control.is-expanded
+                  input.input(type='email', placeholder='Email' id='input')
+            .columns
+              .column.is-12
+                .select-wrapper
+                  .select.is-fullwidth
+                    select#select
+                      option General inquiry
+                      option PC Repair
+                      option Virus Removal
+                      option PC TuneUp
+                      option Network Services
+            .columns
+              .column.is-12
+                textarea.textarea(placeholder='Explain how we can help you' id='input')
+            .columns(align='left')
+              .column.is-6
+                a.button.is-primary(href='#one')#inquire Send Message
+                a.button.is-danger(href='#one')#inquire Reset
+              .column.is-6
+                
+            
+            
+
+
+        
+                  
+
+
+
+            
+        
